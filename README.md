@@ -1,1 +1,1 @@
-# terraform-azurerm-module-ixnetwork-app
+# module-ixnetwork-app/azurerm
