@@ -1,7 +1,7 @@
 locals {
 	AdminPassword = var.AdminPassword
 	AdminUserName = var.AdminUserName
-	DnsLabel = join("", [lower(replace(local.ResourceGroupName, "_", "-")), "-", lower("${local.Tag}-${local.InstanceId}"), "-", local.uuid])
+	DnsLabel = "${local.Preamble}-dns" 
 	EnableAcceleratedNetworking = var.EnableAcceleratedNetworking
 	EnableIpForwarding = var.EnableIpForwarding
 	Eth0Name = "${local.Preamble}-eth0"
@@ -25,5 +25,4 @@ locals {
 	UserProjectTag = var.UserProjectTag
 	Version = var.Version
 	VmSize = var.VmSize
-	uuid = "${substr(uuid(), 1, 6)}"
 }
