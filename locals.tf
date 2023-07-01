@@ -15,7 +15,7 @@ locals {
 	MarketplaceImageOfferId = var.MarketplaceImageOfferId
 	MarketplaceImageProductId = local.MarketplaceImageOfferId
 	MarketplaceImagePublisherId = var.MarketplaceImagePublisherId
-	Preamble = "${local.UserLoginTag}-${local.UserProjectTag}-${local.Tag}-${local.InstanceId}-${local.Version}"
+	Preamble = "${local.UserLoginTag}-${local.UserProjectTag}-${local.Tag}-${local.Version}-${local.InstanceId}"
 	ResourceGroupLocation = var.ResourceGroupLocation
 	ResourceGroupName = var.ResourceGroupName
 	SshKeyName = var.SshKeyName
