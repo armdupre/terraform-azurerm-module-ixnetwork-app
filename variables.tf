@@ -1,20 +1,24 @@
 variable "AdminPassword" {
+	description = "Password associated with the VM administrator account"
 	sensitive = true
 	type = string
 }
 
 variable "AdminUserName" {
 	default = "azure"
+	description = "Id of the VM administrator account"
 	type = string
 }
 
 variable "EnableAcceleratedNetworking" {
 	default = false
+	description = "Enables SR-IOV on supported VMs to improve networking performance"
 	type = bool
 }
 
 variable "EnableIpForwarding" {
 	default = false
+	description = "Enables forwarding of network traffic to an address not assigned to VM"
 	type = bool
 }
 
@@ -55,14 +59,17 @@ variable "MarketplaceImagePublisherId" {
 
 variable "ResourceGroupLocation" {
 	default = "East US"
+	description = "Location of container metadata and control plane operations"
 	type = string
 }
 
 variable "ResourceGroupName" {
+	description = "Id of container that holds related resources that you want to manage together"
 	type = string
 }
 
 variable "SshKeyName" {
+	description = "Id associated with SSH key pair used for authentication"
 	type = string
 }
 
@@ -106,6 +113,7 @@ variable "Version" {
 
 variable "VmSize" {
 	default = "Standard_F4s_v2"
+	description = "Category, series and instance specifications associated with the VM"
 	type = string
 	validation {
 		condition = contains([	"Standard_F4s_v2",	"Standard_F8s_v2"
