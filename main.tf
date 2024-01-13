@@ -36,7 +36,7 @@ resource "azurerm_windows_virtual_machine" "Instance" {
 		azurerm_network_interface.Eth0
 	]
 	timeouts {
-		create = "5m"
+		create = "9m"
 		delete = "10m"
 	}
 }
