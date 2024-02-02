@@ -68,11 +68,6 @@ variable "ResourceGroupName" {
 	type = string
 }
 
-variable "SshKeyName" {
-	description = "Id associated with SSH key pair used for authentication"
-	type = string
-}
-
 variable "Tag" {
 	default = "ixnetwork"
 	description = "App ID tag of application using the deployment"

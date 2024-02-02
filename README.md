@@ -13,6 +13,5 @@ module "App" {
 	AdminPassword = local.AppAdminPassword
 	Eth0SubnetId = module.Vnet.PublicSubnet.id
 	ResourceGroupName = azurerm_resource_group.ResourceGroup.name
-	SshKeyName = azurerm_ssh_public_key.SshKey.name
 }
 ```
