@@ -10,12 +10,6 @@ variable "AdminUserName" {
 	type = string
 }
 
-variable "EnableAcceleratedNetworking" {
-	default = false
-	description = "Enables SR-IOV on supported VMs to improve networking performance"
-	type = bool
-}
-
 variable "EnableIpForwarding" {
 	default = false
 	description = "Enables forwarding of network traffic to an address not assigned to VM"
